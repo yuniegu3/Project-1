@@ -1,0 +1,183 @@
+html{
+	background-color: beige;
+}
+
+header{
+	margin-left:11%;
+	margin-top: 5%;
+	text-align: center;
+}
+
+section{
+	text-align: center;
+}
+
+nav {
+	margin: 0;
+	padding:0;
+	width: 10%;
+	background-color: #56667D;
+	height:100%;
+	position: fixed;
+	top:0;
+	left:0;
+	display:inline-block;
+	display: block;
+}
+
+ul {
+	margin: 0;
+	padding:0;
+	list-style: none;
+	display: block;
+}
+
+li {
+	border:1px solid black;
+	font-weight: bold;
+
+}
+
+li a {
+	display: block;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #1F0830;
+    color: white;
+}
+
+.active {
+	background-color: #1F0830;
+    color: white;
+}
+
+h1{
+	font-size: 50px;
+	margin-left: 5%;
+	margin-top: 7%;
+	text-shadow: 3px 3px #270B52;
+}
+
+h2 {
+	font-size: 30px;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+
+#headerSection {
+	display: inline-flex;
+	flex-direction: row;
+	background-color: #56667D;
+	margin-right: 1%;
+}
+
+.contenttxt {
+	background-color: #F6EEFF;
+	display: block;
+	padding: 30px;
+	margin-left: 20%;
+	margin-right:10%;
+	text-align: left;
+}
+
+
+#navlogo {
+	height:80%;
+	width: 80%;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+#container {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	margin-left: 15%;
+	height: 500px;
+	width: 80%;
+}
+/*had to make 2nd container for the alignment with margin because the images were inside the container also this had to be class because id would overwrite.
+*/
+.pcontainer{
+	margin-left:10%;
+}
+
+
+/*resize the image*/
+#logo {
+	height: 220px;
+	width: 20%;
+	margin-left: 10%;
+}
+/*resize the image made seperate from logo due to size difference*/
+.mainimage {
+	height:550px;
+	width: 70%;
+	margin-top:2%;
+	margin-left: 10%; 
+}
+/*resize the images that are used in last section*/
+
+.image {
+	height: 400px;
+	width: 80%;
+	display: block;
+	margin-left: 10%;
+}
+
+
+.show {
+animation: fadeIn 3s forwards;
+
+}
+.hide {
+	animation: fadeOut 3s forwards;
+}
+
+@-webkit-keyframes fadeIn{
+		0% {opacity: 0;}
+	    100% {opacity: 1;}
+	}
+
+@keyframes fadeIn{
+		0% {opacity: 0;}
+		100% {opacity: 1;}
+	}
+@-webkit-keyframes fadeOut{
+		0% {opacity: 1;}
+		100% {opacity: 0;}
+	}
+
+@keyframes fadeOut{
+		0% {opacity: 1;}
+		100% {opacity: 0;}
+	}
+footer {
+    background-color: #56667D;
+    color: white;
+    text-align: center;
+    position:absolute;
+    width:100%;
+    margin-top: 5%;
+}
+a:link {color:white;
+        }
+a:hover {color:white;
+        font-weight: bold}
+
+#footer {
+	position: relative;
+	bottom:0;
+}
+
+
+
